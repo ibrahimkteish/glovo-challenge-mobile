@@ -49,6 +49,8 @@
 		A4AABBCD210626CA00A65298 /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBCC210626CA00A65298 /* CLLocationManager+Rx.swift */; };
 		A4AABBD0210627F100A65298 /* GeolocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBCF210627F100A65298 /* GeolocationService.swift */; };
 		A4AABBD2210632A100A65298 /* CountriesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBD1210632A100A65298 /* CountriesListController.swift */; };
+		A4AABBD42106382000A65298 /* CountryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBD32106382000A65298 /* CountryListViewModel.swift */; };
+		A4AABBD721063BC900A65298 /* Fucntional.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBD621063BC900A65298 /* Fucntional.swift */; };
 		B06C90F16ED3ACA440A12B65 /* Pods_GlovoChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A85D529C0D01B9F6879C584 /* Pods_GlovoChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +101,8 @@
 		A4AABBCC210626CA00A65298 /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
 		A4AABBCF210627F100A65298 /* GeolocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationService.swift; sourceTree = "<group>"; };
 		A4AABBD1210632A100A65298 /* CountriesListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListController.swift; sourceTree = "<group>"; };
+		A4AABBD32106382000A65298 /* CountryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModel.swift; sourceTree = "<group>"; };
+		A4AABBD621063BC900A65298 /* Fucntional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fucntional.swift; sourceTree = "<group>"; };
 		F37760CFE50B84E856B5A9FC /* Pods-GlovoChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovoChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlovoChallenge/Pods-GlovoChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,6 +207,7 @@
 				A4AABBB3210605D000A65298 /* Network */,
 				A448DE0C2105C53700633E65 /* Protocols */,
 				A448DE132105C83200633E65 /* Router */,
+				A4AABBD521063B9F00A65298 /* Utilities */,
 				A4AABBCE210627CA00A65298 /* Services */,
 				A448DE1D2105CD0300633E65 /* Storyboards */,
 				A477AE432105BEDF00696EE3 /* AppDelegate.swift */,
@@ -289,6 +294,7 @@
 		A4AABB992105E1BA00A65298 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				A4AABBD32106382000A65298 /* CountryListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -340,6 +346,14 @@
 				A4AABBCF210627F100A65298 /* GeolocationService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		A4AABBD521063B9F00A65298 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A4AABBD621063BC900A65298 /* Fucntional.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		F63D33951922CE700864473D /* Pods */ = {
@@ -501,6 +515,7 @@
 				A4AABBAE2105EC1900A65298 /* AboutCoordinator.swift in Sources */,
 				A4AABBBB2106078300A65298 /* Operation.swift in Sources */,
 				A448DE102105C61900633E65 /* Presentable.swift in Sources */,
+				A4AABBD721063BC900A65298 /* Fucntional.swift in Sources */,
 				A4AABB922105E04500A65298 /* TabbarController.swift in Sources */,
 				A448DE242105D43300633E65 /* CoordinatorFactory.swift in Sources */,
 				A448DE122105C71E00633E65 /* BaseView.swift in Sources */,
@@ -513,6 +528,7 @@
 				A448DE1F2105CD2700633E65 /* Storyboards.swift in Sources */,
 				A4AABB9D2105E2E900A65298 /* AboutController.swift in Sources */,
 				A4AABBA52105E79D00A65298 /* AboutModulesFactory.swift in Sources */,
+				A4AABBD42106382000A65298 /* CountryListViewModel.swift in Sources */,
 				A4AABBBD210607A300A65298 /* Dispatcher.swift in Sources */,
 				A4AABBC221060B6D00A65298 /* MapRequests.swift in Sources */,
 				A448DE1A2105CA5F00633E65 /* UIViewController.swift in Sources */,

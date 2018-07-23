@@ -7,11 +7,18 @@
 //
 
 import Foundation
-
+import RxDataSources
 
 typealias Cities = [City]
 
-struct City: Codable {
+struct City: Codable, Equatable, IdentifiableType {
+  
+  typealias Identity = Code
+
+  var identity: City.Code {
+    return code
+  }
+  
   typealias Code = Tagged<City, String>
   let code: Code
   let countryCode: Country.Code
