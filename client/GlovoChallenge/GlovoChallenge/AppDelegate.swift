@@ -12,10 +12,20 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
-
-
+  var rootController: UINavigationController {
+    return self.window!.rootViewController as! UINavigationController // swiftlint:disable:this force_cast
+  }
+  
+  private func makeCoordinator() -> Coordinator {
+    return ApplicationCoordinator(coordinatorFactory: CoordinatorFactoryImp(),
+                                  router: RouterImp(rootController: self.rootController))
+  }
+ 
+  private lazy var applicationCoordinator: Coordinator = self.makeCoordinator()
+ 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
+    self.applicationCoordinator.start()
     return true
   }
 
