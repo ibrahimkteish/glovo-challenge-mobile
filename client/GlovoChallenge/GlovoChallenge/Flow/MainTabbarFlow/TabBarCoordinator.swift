@@ -43,7 +43,7 @@ final class TabbarCoordinator: BaseCoordinator {
       }).disposed(by: disposeBag)
     
     tabbarView
-      .onViewDidLoad
+      .onAbout
       .subscribe(onNext: { [weak self] (navController) in
         if navController.viewControllers.isEmpty == true {
           guard let activeUsersCoordinator = self?.coordinatorFactory.makeAboutCoordinator(navigationController: navController) else { return }

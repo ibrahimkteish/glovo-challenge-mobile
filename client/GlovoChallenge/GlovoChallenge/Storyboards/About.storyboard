@@ -17,7 +17,19 @@
                     <view key="view" contentMode="scaleToFill" id="wZf-Yw-ZVa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1V-8i-GOT">
+                                <rect key="frame" x="164" y="323" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="w1V-8i-GOT" firstAttribute="centerX" secondItem="wZf-Yw-ZVa" secondAttribute="centerX" id="QfR-We-VUl"/>
+                            <constraint firstItem="w1V-8i-GOT" firstAttribute="centerY" secondItem="wZf-Yw-ZVa" secondAttribute="centerY" id="RgB-HS-Euv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6SD-Um-vvo"/>
                     </view>
                 </viewController>
