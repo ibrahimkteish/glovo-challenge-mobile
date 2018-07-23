@@ -38,6 +38,10 @@ final class HomeCoordinator: BaseCoordinator {
   }
   
   private func showCountriesList() {
-    
+    let countryListOutput = factory.makeCountryListOutput()
+    countryListOutput.onDidSelectCity.subscribe(onNext: { (city) in
+      print(city) // forNow
+    }).disposed(by: self.disposeBag)
+    self.router.present(countryListOutput)
   }
 }

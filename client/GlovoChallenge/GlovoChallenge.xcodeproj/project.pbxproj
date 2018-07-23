@@ -253,9 +253,9 @@
 		A4AABB952105E18E00A65298 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A4AABBAF2105EC8600A65298 /* HomeCoordinator.swift */,
 				A4AABB982105E1B200A65298 /* Controllers */,
 				A4AABB992105E1BA00A65298 /* ViewModels */,
-				A4AABBAF2105EC8600A65298 /* HomeCoordinator.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";

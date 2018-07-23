@@ -10,4 +10,5 @@ import Foundation
 
 protocol HomeModulesFactory {
   func makeHomeOutput() -> HomeViewOutput
+  func makeCountryListOutput() -> CountriesListViewOutput
 }
