@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class ModulesFactory: HomeModulesFactory, AboutModulesFactory {
+final class ModulesFactoryImp: HomeModulesFactory, AboutModulesFactory {
   func makeHomeOutput() -> HomeViewOutput {
     return HomeController.controllerFromStoryboard(.home)
   }
