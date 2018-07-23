@@ -46,6 +46,8 @@
 		A4AABBC72106110700A65298 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBC62106110700A65298 /* City.swift */; };
 		A4AABBC92106114400A65298 /* Tagged.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBC82106114400A65298 /* Tagged.swift */; };
 		A4AABBCB2106213700A65298 /* ApplicationEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBCA2106213700A65298 /* ApplicationEnvironment.swift */; };
+		A4AABBCD210626CA00A65298 /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBCC210626CA00A65298 /* CLLocationManager+Rx.swift */; };
+		A4AABBD0210627F100A65298 /* GeolocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBCF210627F100A65298 /* GeolocationService.swift */; };
 		B06C90F16ED3ACA440A12B65 /* Pods_GlovoChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A85D529C0D01B9F6879C584 /* Pods_GlovoChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +95,8 @@
 		A4AABBC62106110700A65298 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		A4AABBC82106114400A65298 /* Tagged.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tagged.swift; sourceTree = "<group>"; };
 		A4AABBCA2106213700A65298 /* ApplicationEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationEnvironment.swift; sourceTree = "<group>"; };
+		A4AABBCC210626CA00A65298 /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
+		A4AABBCF210627F100A65298 /* GeolocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationService.swift; sourceTree = "<group>"; };
 		F37760CFE50B84E856B5A9FC /* Pods-GlovoChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovoChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlovoChallenge/Pods-GlovoChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +145,7 @@
 				A448DE192105CA5F00633E65 /* UIViewController.swift */,
 				A448DE1B2105CA8500633E65 /* UIView.swift */,
 				A448DE202105CEA700633E65 /* NSObject.swift */,
+				A4AABBCC210626CA00A65298 /* CLLocationManager+Rx.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -194,8 +199,9 @@
 				A4AABB8E2105E04500A65298 /* Flow */,
 				A4AABBC321060E0D00A65298 /* Model */,
 				A4AABBB3210605D000A65298 /* Network */,
-				A448DE132105C83200633E65 /* Router */,
 				A448DE0C2105C53700633E65 /* Protocols */,
+				A448DE132105C83200633E65 /* Router */,
+				A4AABBCE210627CA00A65298 /* Services */,
 				A448DE1D2105CD0300633E65 /* Storyboards */,
 				A477AE432105BEDF00696EE3 /* AppDelegate.swift */,
 				A477AE4C2105BEE300696EE3 /* Assets.xcassets */,
@@ -323,6 +329,14 @@
 				A4AABBC82106114400A65298 /* Tagged.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A4AABBCE210627CA00A65298 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A4AABBCF210627F100A65298 /* GeolocationService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		F63D33951922CE700864473D /* Pods */ = {
@@ -473,8 +487,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4AABBD0210627F100A65298 /* GeolocationService.swift in Sources */,
 				A477AE442105BEDF00696EE3 /* AppDelegate.swift in Sources */,
 				A4AABBB52106064900A65298 /* Request.swift in Sources */,
+				A4AABBCD210626CA00A65298 /* CLLocationManager+Rx.swift in Sources */,
 				A4AABBBF210607F300A65298 /* Environment.swift in Sources */,
 				A448DE212105CEA700633E65 /* NSObject.swift in Sources */,
 				A4AABB9B2105E25000A65298 /* HomeController.swift in Sources */,
@@ -658,7 +674,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibrahim.kteish.GlovoChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibrahim.kteish.Glovo.Challenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -677,7 +693,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibrahim.kteish.GlovoChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibrahim.kteish.Glovo.Challenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
