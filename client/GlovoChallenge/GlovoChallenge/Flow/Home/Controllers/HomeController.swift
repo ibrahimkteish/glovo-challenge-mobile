@@ -11,6 +11,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import CoreLocation
+import GoogleMaps
 
 protocol HomeViewOutput: BaseView {
   var onLocationNotGranted: PublishSubject<Void> { get }
@@ -18,8 +19,9 @@ protocol HomeViewOutput: BaseView {
 
 final class HomeController: UIViewController, HomeViewOutput {
   private let disposeBag = DisposeBag()
-  
   let onLocationNotGranted: PublishSubject<Void> = .init()
+  
+  @IBOutlet weak var mapView: GMSMapView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
