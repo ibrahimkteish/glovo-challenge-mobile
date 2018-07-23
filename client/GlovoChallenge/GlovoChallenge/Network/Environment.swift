@@ -61,7 +61,7 @@ public struct EnvironmentFactory {
   ///
   /// - Returns: Development environment
   static let developmentEnv: Environment = {
-    let env = Environment(.dev, host: "http://45.40.138.24:55898/api")
+    let env = Environment(.dev, host: "http://localhost:3000/api")
     return env
   }()
   

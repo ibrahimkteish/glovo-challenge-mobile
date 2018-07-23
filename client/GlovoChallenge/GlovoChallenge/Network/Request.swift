@@ -67,10 +67,10 @@ public protocol Request {
 ///Request default implementation
 public extension Request {
   var dataType: DataType {
-    return .json
+    return .data
   }
   var method: HTTPMethod {
-    return .post
+    return .get
   }
   var headers: [String: Any]? {
     return nil
