@@ -25,6 +25,8 @@
 		A4AABB922105E04500A65298 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABB912105E04500A65298 /* TabbarController.swift */; };
 		A4AABB9B2105E25000A65298 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABB9A2105E25000A65298 /* HomeController.swift */; };
 		A4AABB9D2105E2E900A65298 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABB9C2105E2E900A65298 /* AboutController.swift */; };
+		A4AABB9F2105E36E00A65298 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4AABB9E2105E36E00A65298 /* Home.storyboard */; };
+		A4AABBA12105E37900A65298 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4AABBA02105E37900A65298 /* About.storyboard */; };
 		B06C90F16ED3ACA440A12B65 /* Pods_GlovoChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A85D529C0D01B9F6879C584 /* Pods_GlovoChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,8 @@
 		A4AABB912105E04500A65298 /* TabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		A4AABB9A2105E25000A65298 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		A4AABB9C2105E2E900A65298 /* AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
+		A4AABB9E2105E36E00A65298 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		A4AABBA02105E37900A65298 /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		F37760CFE50B84E856B5A9FC /* Pods-GlovoChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovoChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlovoChallenge/Pods-GlovoChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +110,8 @@
 		A448DE1D2105CD0300633E65 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				A4AABBA02105E37900A65298 /* About.storyboard */,
+				A4AABB9E2105E36E00A65298 /* Home.storyboard */,
 				A477AE492105BEDF00696EE3 /* Main.storyboard */,
 				A448DE1E2105CD2700633E65 /* Storyboards.swift */,
 			);
@@ -301,8 +307,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A477AE502105BEE300696EE3 /* LaunchScreen.storyboard in Resources */,
+				A4AABBA12105E37900A65298 /* About.storyboard in Resources */,
 				A477AE4D2105BEE300696EE3 /* Assets.xcassets in Resources */,
 				A477AE4B2105BEDF00696EE3 /* Main.storyboard in Resources */,
+				A4AABB9F2105E36E00A65298 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
