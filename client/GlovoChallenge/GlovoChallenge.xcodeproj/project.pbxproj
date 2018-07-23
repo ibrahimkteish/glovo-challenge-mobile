@@ -38,6 +38,7 @@
 		A4AABBB52106064900A65298 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBB42106064900A65298 /* Request.swift */; };
 		A4AABBB7210606EF00A65298 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBB6210606EF00A65298 /* Response.swift */; };
 		A4AABBB92106072D00A65298 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBB82106072D00A65298 /* Session.swift */; };
+		A4AABBBB2106078300A65298 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBBA2106078300A65298 /* Operation.swift */; };
 		A4AABBBD210607A300A65298 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBBC210607A300A65298 /* Dispatcher.swift */; };
 		A4AABBBF210607F300A65298 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBBE210607F300A65298 /* Environment.swift */; };
 		B06C90F16ED3ACA440A12B65 /* Pods_GlovoChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A85D529C0D01B9F6879C584 /* Pods_GlovoChallenge.framework */; };
@@ -79,6 +80,7 @@
 		A4AABBB42106064900A65298 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		A4AABBB6210606EF00A65298 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		A4AABBB82106072D00A65298 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		A4AABBBA2106078300A65298 /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
 		A4AABBBC210607A300A65298 /* Dispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
 		A4AABBBE210607F300A65298 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		F37760CFE50B84E856B5A9FC /* Pods-GlovoChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovoChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlovoChallenge/Pods-GlovoChallenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -282,11 +284,12 @@
 		A4AABBB3210605D000A65298 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				A4AABBB42106064900A65298 /* Request.swift */,
 				A4AABBBC210607A300A65298 /* Dispatcher.swift */,
 				A4AABBBE210607F300A65298 /* Environment.swift */,
 				A4AABBB6210606EF00A65298 /* Response.swift */,
+				A4AABBB42106064900A65298 /* Request.swift */,
 				A4AABBB82106072D00A65298 /* Session.swift */,
+				A4AABBBA2106078300A65298 /* Operation.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				A448DE212105CEA700633E65 /* NSObject.swift in Sources */,
 				A4AABB9B2105E25000A65298 /* HomeController.swift in Sources */,
 				A4AABBAE2105EC1900A65298 /* AboutCoordinator.swift in Sources */,
+				A4AABBBB2106078300A65298 /* Operation.swift in Sources */,
 				A448DE102105C61900633E65 /* Presentable.swift in Sources */,
 				A4AABB922105E04500A65298 /* TabbarController.swift in Sources */,
 				A448DE242105D43300633E65 /* CoordinatorFactory.swift in Sources */,
