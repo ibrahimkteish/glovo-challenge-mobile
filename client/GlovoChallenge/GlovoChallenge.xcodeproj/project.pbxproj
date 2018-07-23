@@ -31,6 +31,7 @@
 		A4AABBA52105E79D00A65298 /* AboutModulesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBA42105E79D00A65298 /* AboutModulesFactory.swift */; };
 		A4AABBA82105E82B00A65298 /* ModulesFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBA72105E82B00A65298 /* ModulesFactoryImp.swift */; };
 		A4AABBAA2105EA3E00A65298 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBA92105EA3E00A65298 /* TabBarCoordinator.swift */; };
+		A4AABBAC2105EB1000A65298 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBAB2105EB1000A65298 /* ApplicationCoordinator.swift */; };
 		B06C90F16ED3ACA440A12B65 /* Pods_GlovoChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A85D529C0D01B9F6879C584 /* Pods_GlovoChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		A4AABBA42105E79D00A65298 /* AboutModulesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutModulesFactory.swift; sourceTree = "<group>"; };
 		A4AABBA72105E82B00A65298 /* ModulesFactoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesFactoryImp.swift; sourceTree = "<group>"; };
 		A4AABBA92105EA3E00A65298 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		A4AABBAB2105EB1000A65298 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		F37760CFE50B84E856B5A9FC /* Pods-GlovoChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovoChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlovoChallenge/Pods-GlovoChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +178,7 @@
 		A477AE572105BFDF00696EE3 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				A4AABBAB2105EB1000A65298 /* ApplicationCoordinator.swift */,
 				A477AE582105C41D00696EE3 /* BaseCoordinator.swift */,
 			);
 			path = Application;
@@ -419,6 +422,7 @@
 				A4AABB9D2105E2E900A65298 /* AboutController.swift in Sources */,
 				A4AABBA52105E79D00A65298 /* AboutModulesFactory.swift in Sources */,
 				A448DE1A2105CA5F00633E65 /* UIViewController.swift in Sources */,
+				A4AABBAC2105EB1000A65298 /* ApplicationCoordinator.swift in Sources */,
 				A4AABBA32105E78800A65298 /* HomeModulesFactory.swift in Sources */,
 				A4AABBA82105E82B00A65298 /* ModulesFactoryImp.swift in Sources */,
 				A448DE1C2105CA8500633E65 /* UIView.swift in Sources */,
