@@ -36,6 +36,7 @@
 		A4AABBB02105EC8600A65298 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBAF2105EC8600A65298 /* HomeCoordinator.swift */; };
 		A4AABBB22105ECE600A65298 /* CoordinatorFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBB12105ECE600A65298 /* CoordinatorFactoryImp.swift */; };
 		A4AABBB52106064900A65298 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBB42106064900A65298 /* Request.swift */; };
+		A4AABBB7210606EF00A65298 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBB6210606EF00A65298 /* Response.swift */; };
 		B06C90F16ED3ACA440A12B65 /* Pods_GlovoChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A85D529C0D01B9F6879C584 /* Pods_GlovoChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		A4AABBAF2105EC8600A65298 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		A4AABBB12105ECE600A65298 /* CoordinatorFactoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryImp.swift; sourceTree = "<group>"; };
 		A4AABBB42106064900A65298 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		A4AABBB6210606EF00A65298 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		F37760CFE50B84E856B5A9FC /* Pods-GlovoChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovoChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlovoChallenge/Pods-GlovoChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -275,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				A4AABBB42106064900A65298 /* Request.swift */,
+				A4AABBB6210606EF00A65298 /* Response.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				A448DE1C2105CA8500633E65 /* UIView.swift in Sources */,
 				A448DE0E2105C54B00633E65 /* Coordinator.swift in Sources */,
 				A4AABBB02105EC8600A65298 /* HomeCoordinator.swift in Sources */,
+				A4AABBB7210606EF00A65298 /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
