@@ -44,9 +44,32 @@
                     <view key="view" contentMode="scaleToFill" id="lG1-ix-dfP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="qRy-k3-98f">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ngq-Sw-MQN">
+                                <rect key="frame" x="0.0" y="76" width="375" height="591"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ngq-Sw-MQN" firstAttribute="leading" secondItem="mSM-1Q-Yet" secondAttribute="leading" id="3oB-XE-ukE"/>
+                            <constraint firstItem="mSM-1Q-Yet" firstAttribute="bottom" secondItem="Ngq-Sw-MQN" secondAttribute="bottom" id="D10-zV-5Ge"/>
+                            <constraint firstItem="qRy-k3-98f" firstAttribute="trailing" secondItem="mSM-1Q-Yet" secondAttribute="trailing" id="IKf-YZ-Bsx"/>
+                            <constraint firstItem="qRy-k3-98f" firstAttribute="top" secondItem="mSM-1Q-Yet" secondAttribute="top" id="SRS-dz-bZ9"/>
+                            <constraint firstItem="mSM-1Q-Yet" firstAttribute="trailing" secondItem="Ngq-Sw-MQN" secondAttribute="trailing" id="XOF-Y0-aqM"/>
+                            <constraint firstItem="Ngq-Sw-MQN" firstAttribute="top" secondItem="qRy-k3-98f" secondAttribute="bottom" id="r4p-c1-sa5"/>
+                            <constraint firstItem="qRy-k3-98f" firstAttribute="leading" secondItem="mSM-1Q-Yet" secondAttribute="leading" id="uwI-Tu-z3m"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="mSM-1Q-Yet"/>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="qRy-k3-98f" id="eNT-5P-Msi"/>
+                        <outlet property="tableView" destination="Ngq-Sw-MQN" id="tNK-NX-Kb9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QQx-Am-r1l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
