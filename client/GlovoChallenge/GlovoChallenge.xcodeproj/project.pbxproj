@@ -45,6 +45,7 @@
 		A4AABBC521060E3C00A65298 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBC421060E3C00A65298 /* Country.swift */; };
 		A4AABBC72106110700A65298 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBC62106110700A65298 /* City.swift */; };
 		A4AABBC92106114400A65298 /* Tagged.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBC82106114400A65298 /* Tagged.swift */; };
+		A4AABBCB2106213700A65298 /* ApplicationEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBCA2106213700A65298 /* ApplicationEnvironment.swift */; };
 		B06C90F16ED3ACA440A12B65 /* Pods_GlovoChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A85D529C0D01B9F6879C584 /* Pods_GlovoChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,7 @@
 		A4AABBC421060E3C00A65298 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		A4AABBC62106110700A65298 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		A4AABBC82106114400A65298 /* Tagged.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tagged.swift; sourceTree = "<group>"; };
+		A4AABBCA2106213700A65298 /* ApplicationEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationEnvironment.swift; sourceTree = "<group>"; };
 		F37760CFE50B84E856B5A9FC /* Pods-GlovoChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovoChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlovoChallenge/Pods-GlovoChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				A4AABBAB2105EB1000A65298 /* ApplicationCoordinator.swift */,
+				A4AABBCA2106213700A65298 /* ApplicationEnvironment.swift */,
 				A477AE582105C41D00696EE3 /* BaseCoordinator.swift */,
 			);
 			path = Application;
@@ -486,6 +489,7 @@
 				A448DE172105C9AB00633E65 /* RouterImp.swift in Sources */,
 				A448DE152105C85A00633E65 /* Router.swift in Sources */,
 				A4AABBB22105ECE600A65298 /* CoordinatorFactoryImp.swift in Sources */,
+				A4AABBCB2106213700A65298 /* ApplicationEnvironment.swift in Sources */,
 				A4AABBAA2105EA3E00A65298 /* TabBarCoordinator.swift in Sources */,
 				A448DE1F2105CD2700633E65 /* Storyboards.swift in Sources */,
 				A4AABB9D2105E2E900A65298 /* AboutController.swift in Sources */,
