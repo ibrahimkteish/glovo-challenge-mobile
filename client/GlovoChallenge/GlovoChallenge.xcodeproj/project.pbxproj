@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A448DE0E2105C54B00633E65 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A448DE0D2105C54B00633E65 /* Coordinator.swift */; };
+		A448DE102105C61900633E65 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A448DE0F2105C61900633E65 /* Presentable.swift */; };
 		A477AE442105BEDF00696EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A477AE432105BEDF00696EE3 /* AppDelegate.swift */; };
 		A477AE4B2105BEDF00696EE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A477AE492105BEDF00696EE3 /* Main.storyboard */; };
 		A477AE4D2105BEE300696EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A477AE4C2105BEE300696EE3 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		A448DE0D2105C54B00633E65 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A448DE0F2105C61900633E65 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		A477AE402105BEDF00696EE3 /* GlovoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlovoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A477AE432105BEDF00696EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A477AE4A2105BEDF00696EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				A448DE0D2105C54B00633E65 /* Coordinator.swift */,
+				A448DE0F2105C61900633E65 /* Presentable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A477AE442105BEDF00696EE3 /* AppDelegate.swift in Sources */,
+				A448DE102105C61900633E65 /* Presentable.swift in Sources */,
 				A477AE592105C41D00696EE3 /* BaseCoordinator.swift in Sources */,
 				A448DE0E2105C54B00633E65 /* Coordinator.swift in Sources */,
 			);
