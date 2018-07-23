@@ -6,4 +6,16 @@
 //  Copyright © 2018 Ibrahim Kteish. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+/// This protocol will be responsible for presenting any module later on,
+/// so we dont deal with UIViewController directly
+protocol Presentable {
+  func toPresent() -> UIViewController?
+}
+
+extension UIViewController: Presentable {
+  func toPresent() -> UIViewController? {
+    return self
+  }
+}
