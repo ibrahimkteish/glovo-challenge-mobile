@@ -22,6 +22,7 @@
 		A477AE4D2105BEE300696EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A477AE4C2105BEE300696EE3 /* Assets.xcassets */; };
 		A477AE502105BEE300696EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A477AE4E2105BEE300696EE3 /* LaunchScreen.storyboard */; };
 		A477AE592105C41D00696EE3 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A477AE582105C41D00696EE3 /* BaseCoordinator.swift */; };
+		A4AABB8C2105DD8F00A65298 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABB8B2105DD8F00A65298 /* TabbarController.swift */; };
 		B06C90F16ED3ACA440A12B65 /* Pods_GlovoChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A85D529C0D01B9F6879C584 /* Pods_GlovoChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		A477AE4F2105BEE300696EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A477AE512105BEE300696EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A477AE582105C41D00696EE3 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		A4AABB8B2105DD8F00A65298 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		F37760CFE50B84E856B5A9FC /* Pods-GlovoChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovoChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlovoChallenge/Pods-GlovoChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +139,7 @@
 			children = (
 				A477AE572105BFDF00696EE3 /* Application */,
 				A448DE182105CA1A00633E65 /* Extensions */,
+				A4AABB882105DC1300A65298 /* Flow */,
 				A448DE222105D3F800633E65 /* Factories */,
 				A448DE132105C83200633E65 /* Router */,
 				A448DE0C2105C53700633E65 /* Protocols */,
@@ -155,6 +158,31 @@
 				A477AE582105C41D00696EE3 /* BaseCoordinator.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		A4AABB882105DC1300A65298 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				A4AABB892105DC2E00A65298 /* MainTabbarFlow */,
+			);
+			name = Flow;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		A4AABB892105DC2E00A65298 /* MainTabbarFlow */ = {
+			isa = PBXGroup;
+			children = (
+				A4AABB8A2105DD6F00A65298 /* Controllers */,
+			);
+			path = MainTabbarFlow;
+			sourceTree = "<group>";
+		};
+		A4AABB8A2105DD6F00A65298 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A4AABB8B2105DD8F00A65298 /* TabbarController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		F63D33951922CE700864473D /* Pods */ = {
@@ -306,6 +334,7 @@
 				A477AE442105BEDF00696EE3 /* AppDelegate.swift in Sources */,
 				A448DE212105CEA700633E65 /* NSObject.swift in Sources */,
 				A448DE102105C61900633E65 /* Presentable.swift in Sources */,
+				A4AABB8C2105DD8F00A65298 /* TabbarController.swift in Sources */,
 				A448DE242105D43300633E65 /* CoordinatorFactory.swift in Sources */,
 				A448DE122105C71E00633E65 /* BaseView.swift in Sources */,
 				A477AE592105C41D00696EE3 /* BaseCoordinator.swift in Sources */,
@@ -462,7 +491,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NSR7XQ44X5;
 				INFOPLIST_FILE = GlovoChallenge/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibrahim.kteish.GlovoChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -478,7 +510,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NSR7XQ44X5;
 				INFOPLIST_FILE = GlovoChallenge/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibrahim.kteish.GlovoChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
