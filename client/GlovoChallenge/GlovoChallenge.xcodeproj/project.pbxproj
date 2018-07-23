@@ -52,6 +52,7 @@
 		A477AE422105BEDF00696EE3 /* GlovoChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				A477AE572105BFDF00696EE3 /* Application */,
 				A477AE432105BEDF00696EE3 /* AppDelegate.swift */,
 				A477AE492105BEDF00696EE3 /* Main.storyboard */,
 				A477AE4C2105BEE300696EE3 /* Assets.xcassets */,
@@ -59,6 +60,13 @@
 				A477AE512105BEE300696EE3 /* Info.plist */,
 			);
 			path = GlovoChallenge;
+			sourceTree = "<group>";
+		};
+		A477AE572105BFDF00696EE3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
