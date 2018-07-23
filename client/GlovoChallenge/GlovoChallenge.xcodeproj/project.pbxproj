@@ -85,6 +85,7 @@
 		A448DE1D2105CD0300633E65 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				A477AE492105BEDF00696EE3 /* Main.storyboard */,
 				A448DE1E2105CD2700633E65 /* Storyboards.swift */,
 			);
 			path = Storyboards;
@@ -115,7 +116,6 @@
 				A448DE0C2105C53700633E65 /* Protocols */,
 				A448DE1D2105CD0300633E65 /* Storyboards */,
 				A477AE432105BEDF00696EE3 /* AppDelegate.swift */,
-				A477AE492105BEDF00696EE3 /* Main.storyboard */,
 				A477AE4C2105BEE300696EE3 /* Assets.xcassets */,
 				A477AE4E2105BEE300696EE3 /* LaunchScreen.storyboard */,
 				A477AE512105BEE300696EE3 /* Info.plist */,
