@@ -7,7 +7,11 @@
 //
 
 import Foundation
-
+import UIKit
+ 
 protocol CoordinatorFactory {
   func makeTabBarCoordinator() -> (configurator: Coordinator, toPreesent: Presentable)
+  func makeAboutCoordinator(navigationController: UINavigationController) -> Coordinator
+  func makeHomeCoordinator(navigationController: UINavigationController) -> Coordinator
+
 }
