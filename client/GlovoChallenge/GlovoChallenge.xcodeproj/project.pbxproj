@@ -48,6 +48,7 @@
 		A4AABBCB2106213700A65298 /* ApplicationEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBCA2106213700A65298 /* ApplicationEnvironment.swift */; };
 		A4AABBCD210626CA00A65298 /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBCC210626CA00A65298 /* CLLocationManager+Rx.swift */; };
 		A4AABBD0210627F100A65298 /* GeolocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBCF210627F100A65298 /* GeolocationService.swift */; };
+		A4AABBD2210632A100A65298 /* CountriesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBD1210632A100A65298 /* CountriesListController.swift */; };
 		B06C90F16ED3ACA440A12B65 /* Pods_GlovoChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A85D529C0D01B9F6879C584 /* Pods_GlovoChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +98,7 @@
 		A4AABBCA2106213700A65298 /* ApplicationEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationEnvironment.swift; sourceTree = "<group>"; };
 		A4AABBCC210626CA00A65298 /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
 		A4AABBCF210627F100A65298 /* GeolocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationService.swift; sourceTree = "<group>"; };
+		A4AABBD1210632A100A65298 /* CountriesListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListController.swift; sourceTree = "<group>"; };
 		F37760CFE50B84E856B5A9FC /* Pods-GlovoChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovoChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlovoChallenge/Pods-GlovoChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -279,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				A4AABB9A2105E25000A65298 /* HomeController.swift */,
+				A4AABBD1210632A100A65298 /* CountriesListController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				A4AABBB92106072D00A65298 /* Session.swift in Sources */,
 				A4AABBA82105E82B00A65298 /* ModulesFactoryImp.swift in Sources */,
 				A448DE1C2105CA8500633E65 /* UIView.swift in Sources */,
+				A4AABBD2210632A100A65298 /* CountriesListController.swift in Sources */,
 				A448DE0E2105C54B00633E65 /* Coordinator.swift in Sources */,
 				A4AABBB02105EC8600A65298 /* HomeCoordinator.swift in Sources */,
 				A4AABBC521060E3C00A65298 /* Country.swift in Sources */,
