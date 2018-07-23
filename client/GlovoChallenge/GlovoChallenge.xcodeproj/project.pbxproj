@@ -15,6 +15,7 @@
 		A448DE1A2105CA5F00633E65 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A448DE192105CA5F00633E65 /* UIViewController.swift */; };
 		A448DE1C2105CA8500633E65 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A448DE1B2105CA8500633E65 /* UIView.swift */; };
 		A448DE1F2105CD2700633E65 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A448DE1E2105CD2700633E65 /* Storyboards.swift */; };
+		A448DE212105CEA700633E65 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A448DE202105CEA700633E65 /* NSObject.swift */; };
 		A477AE442105BEDF00696EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A477AE432105BEDF00696EE3 /* AppDelegate.swift */; };
 		A477AE4B2105BEDF00696EE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A477AE492105BEDF00696EE3 /* Main.storyboard */; };
 		A477AE4D2105BEE300696EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A477AE4C2105BEE300696EE3 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		A448DE192105CA5F00633E65 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		A448DE1B2105CA8500633E65 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		A448DE1E2105CD2700633E65 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		A448DE202105CEA700633E65 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		A477AE402105BEDF00696EE3 /* GlovoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlovoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A477AE432105BEDF00696EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A477AE4A2105BEDF00696EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			children = (
 				A448DE192105CA5F00633E65 /* UIViewController.swift */,
 				A448DE1B2105CA8500633E65 /* UIView.swift */,
+				A448DE202105CEA700633E65 /* NSObject.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A477AE442105BEDF00696EE3 /* AppDelegate.swift in Sources */,
+				A448DE212105CEA700633E65 /* NSObject.swift in Sources */,
 				A448DE102105C61900633E65 /* Presentable.swift in Sources */,
 				A448DE122105C71E00633E65 /* BaseView.swift in Sources */,
 				A477AE592105C41D00696EE3 /* BaseCoordinator.swift in Sources */,
