@@ -13,7 +13,7 @@ enum MapRequests: Request {
   
   case countries
   case cities
-  case city(code: String)
+  case city(code: City.Code)
 
   var path: String {
     switch self {
@@ -22,7 +22,7 @@ enum MapRequests: Request {
     case .cities:
       return "cities"
     case let .city(code):
-      return "cities" + "/" + code
+      return "cities" + "/" + code.rawValue
     }
   }
 }
