@@ -41,3 +41,23 @@ extension UIViewController {
     child.didMove(toParentViewController: nil)
   }
 }
+
+
+extension UIViewController {
+  
+  private class func instantiateControllerInStoryboard<T: UIViewController>(_ storyboard: UIStoryboard, identifier: String) -> T {
+    return storyboard.instantiateViewController(withIdentifier: identifier) as! T // swiftlint:disable:this force_cast
+  }
+  
+  class func controllerInStoryboard(_ storyboard: UIStoryboard, identifier: String) -> Self {
+    return self.instantiateControllerInStoryboard(storyboard, identifier: identifier)
+  }
+  
+  class func controllerInStoryboard(_ storyboard: UIStoryboard) -> Self {
+    return self.controllerInStoryboard(storyboard, identifier: self.nameOfClass)
+  }
+  
+  class func controllerFromStoryboard(_ storyboard: Storyboards) -> Self {
+    return self.controllerInStoryboard(UIStoryboard(name: storyboard.rawValue, bundle: nil), identifier: self.nameOfClass)
+  }
+}
