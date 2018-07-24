@@ -18,7 +18,7 @@ final class ModulesFactoryImp: HomeModulesFactory, AboutModulesFactory {
       return CountriesListContrioller.controllerFromStoryboard(.home)
   }
 
-  func makeHomeOutput() -> HomeViewOutput {
+  func makeHomeOutput() -> HomeViewOutput & HomeViewInput {
     return HomeController.controllerFromStoryboard(.home)
   }
 }

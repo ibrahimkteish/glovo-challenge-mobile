@@ -31,15 +31,16 @@ final class HomeCoordinator: BaseCoordinator {
     let homeOutput = factory.makeHomeOutput()
     
     homeOutput.onLocationNotGranted.subscribe(onNext: { [weak self] () in
-      self?.showCountriesList()
+      self?.showCountriesList(with: homeOutput)
     }).disposed(by: self.disposeBag)
     
     self.router.setRootModule(homeOutput)
   }
   
-  private func showCountriesList() {
+  private func showCountriesList(with homeInput: HomeViewInput) {
     let countryListOutput = factory.makeCountryListOutput()
     countryListOutput.onDidSelectCity.subscribe(onNext: { [weak self] (city) in
+      homeInput.onUserDidSelectCity.onNext(city)
       self?.router.dismissModule()
     }).disposed(by: self.disposeBag)
     self.router.present(countryListOutput)
