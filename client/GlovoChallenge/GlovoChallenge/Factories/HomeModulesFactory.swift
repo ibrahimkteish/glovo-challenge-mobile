@@ -9,5 +9,6 @@
 import Foundation
 
 protocol HomeModulesFactory {
-  func makeHomeOutput() -> HomeViewOutput
+  func makeHomeOutput() -> HomeViewOutput & HomeViewInput
+  func makeCountryListOutput() -> CountriesListViewOutput
 }

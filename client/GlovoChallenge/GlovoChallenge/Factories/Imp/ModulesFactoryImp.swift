@@ -9,11 +9,16 @@
 import Foundation
 
 final class ModulesFactoryImp: HomeModulesFactory, AboutModulesFactory {
-  func makeHomeOutput() -> HomeViewOutput {
-    return HomeController.controllerFromStoryboard(.home)
-  }
   
   func makeAboutOutput() -> AboutViewOutput {
     return AboutController.controllerFromStoryboard(.about)
+  }
+
+  func makeCountryListOutput() -> CountriesListViewOutput {
+      return CountriesListContrioller.controllerFromStoryboard(.home)
+  }
+
+  func makeHomeOutput() -> HomeViewOutput & HomeViewInput {
+    return HomeController.controllerFromStoryboard(.home)
   }
 }

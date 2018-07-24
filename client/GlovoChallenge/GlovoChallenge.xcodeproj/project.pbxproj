@@ -46,6 +46,15 @@
 		A4AABBC72106110700A65298 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBC62106110700A65298 /* City.swift */; };
 		A4AABBC92106114400A65298 /* Tagged.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBC82106114400A65298 /* Tagged.swift */; };
 		A4AABBCB2106213700A65298 /* ApplicationEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBCA2106213700A65298 /* ApplicationEnvironment.swift */; };
+		A4AABBCD210626CA00A65298 /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBCC210626CA00A65298 /* CLLocationManager+Rx.swift */; };
+		A4AABBD0210627F100A65298 /* GeolocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBCF210627F100A65298 /* GeolocationService.swift */; };
+		A4AABBD2210632A100A65298 /* CountriesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBD1210632A100A65298 /* CountriesListController.swift */; };
+		A4AABBD42106382000A65298 /* CountryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBD32106382000A65298 /* CountryListViewModel.swift */; };
+		A4AABBD721063BC900A65298 /* Fucntional.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBD621063BC900A65298 /* Fucntional.swift */; };
+		A4AABBD9210667B400A65298 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBD8210667B400A65298 /* HomeViewModel.swift */; };
+		A4AABBDC2107056900A65298 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = A4AABBDB2107056900A65298 /* cities.json */; };
+		A4AABBDE2107058600A65298 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = A4AABBDD2107058600A65298 /* countries.json */; };
+		A4AABBE0210707DA00A65298 /* OfflineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AABBDF210707DA00A65298 /* OfflineData.swift */; };
 		B06C90F16ED3ACA440A12B65 /* Pods_GlovoChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A85D529C0D01B9F6879C584 /* Pods_GlovoChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +102,15 @@
 		A4AABBC62106110700A65298 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		A4AABBC82106114400A65298 /* Tagged.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tagged.swift; sourceTree = "<group>"; };
 		A4AABBCA2106213700A65298 /* ApplicationEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationEnvironment.swift; sourceTree = "<group>"; };
+		A4AABBCC210626CA00A65298 /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
+		A4AABBCF210627F100A65298 /* GeolocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationService.swift; sourceTree = "<group>"; };
+		A4AABBD1210632A100A65298 /* CountriesListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListController.swift; sourceTree = "<group>"; };
+		A4AABBD32106382000A65298 /* CountryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModel.swift; sourceTree = "<group>"; };
+		A4AABBD621063BC900A65298 /* Fucntional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fucntional.swift; sourceTree = "<group>"; };
+		A4AABBD8210667B400A65298 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A4AABBDB2107056900A65298 /* cities.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
+		A4AABBDD2107058600A65298 /* countries.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		A4AABBDF210707DA00A65298 /* OfflineData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineData.swift; sourceTree = "<group>"; };
 		F37760CFE50B84E856B5A9FC /* Pods-GlovoChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovoChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlovoChallenge/Pods-GlovoChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +159,7 @@
 				A448DE192105CA5F00633E65 /* UIViewController.swift */,
 				A448DE1B2105CA8500633E65 /* UIView.swift */,
 				A448DE202105CEA700633E65 /* NSObject.swift */,
+				A4AABBCC210626CA00A65298 /* CLLocationManager+Rx.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -193,9 +212,12 @@
 				A448DE222105D3F800633E65 /* Factories */,
 				A4AABB8E2105E04500A65298 /* Flow */,
 				A4AABBC321060E0D00A65298 /* Model */,
+				A4AABBDA2107055200A65298 /* Mock */,
 				A4AABBB3210605D000A65298 /* Network */,
-				A448DE132105C83200633E65 /* Router */,
 				A448DE0C2105C53700633E65 /* Protocols */,
+				A448DE132105C83200633E65 /* Router */,
+				A4AABBD521063B9F00A65298 /* Utilities */,
+				A4AABBCE210627CA00A65298 /* Services */,
 				A448DE1D2105CD0300633E65 /* Storyboards */,
 				A477AE432105BEDF00696EE3 /* AppDelegate.swift */,
 				A477AE4C2105BEE300696EE3 /* Assets.xcassets */,
@@ -245,9 +267,9 @@
 		A4AABB952105E18E00A65298 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A4AABBAF2105EC8600A65298 /* HomeCoordinator.swift */,
 				A4AABB982105E1B200A65298 /* Controllers */,
 				A4AABB992105E1BA00A65298 /* ViewModels */,
-				A4AABBAF2105EC8600A65298 /* HomeCoordinator.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -273,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				A4AABB9A2105E25000A65298 /* HomeController.swift */,
+				A4AABBD1210632A100A65298 /* CountriesListController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -280,6 +303,8 @@
 		A4AABB992105E1BA00A65298 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				A4AABBD32106382000A65298 /* CountryListViewModel.swift */,
+				A4AABBD8210667B400A65298 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -323,6 +348,32 @@
 				A4AABBC82106114400A65298 /* Tagged.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A4AABBCE210627CA00A65298 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A4AABBCF210627F100A65298 /* GeolocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A4AABBD521063B9F00A65298 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A4AABBD621063BC900A65298 /* Fucntional.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A4AABBDA2107055200A65298 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				A4AABBDB2107056900A65298 /* cities.json */,
+				A4AABBDD2107058600A65298 /* countries.json */,
+				A4AABBDF210707DA00A65298 /* OfflineData.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		F63D33951922CE700864473D /* Pods */ = {
@@ -395,10 +446,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4AABBDC2107056900A65298 /* cities.json in Resources */,
 				A477AE502105BEE300696EE3 /* LaunchScreen.storyboard in Resources */,
 				A4AABBA12105E37900A65298 /* About.storyboard in Resources */,
 				A477AE4D2105BEE300696EE3 /* Assets.xcassets in Resources */,
 				A477AE4B2105BEDF00696EE3 /* Main.storyboard in Resources */,
+				A4AABBDE2107058600A65298 /* countries.json in Resources */,
 				A4AABB9F2105E36E00A65298 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,8 +526,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4AABBD0210627F100A65298 /* GeolocationService.swift in Sources */,
 				A477AE442105BEDF00696EE3 /* AppDelegate.swift in Sources */,
 				A4AABBB52106064900A65298 /* Request.swift in Sources */,
+				A4AABBD9210667B400A65298 /* HomeViewModel.swift in Sources */,
+				A4AABBCD210626CA00A65298 /* CLLocationManager+Rx.swift in Sources */,
 				A4AABBBF210607F300A65298 /* Environment.swift in Sources */,
 				A448DE212105CEA700633E65 /* NSObject.swift in Sources */,
 				A4AABB9B2105E25000A65298 /* HomeController.swift in Sources */,
@@ -482,8 +538,10 @@
 				A4AABBAE2105EC1900A65298 /* AboutCoordinator.swift in Sources */,
 				A4AABBBB2106078300A65298 /* Operation.swift in Sources */,
 				A448DE102105C61900633E65 /* Presentable.swift in Sources */,
+				A4AABBD721063BC900A65298 /* Fucntional.swift in Sources */,
 				A4AABB922105E04500A65298 /* TabbarController.swift in Sources */,
 				A448DE242105D43300633E65 /* CoordinatorFactory.swift in Sources */,
+				A4AABBE0210707DA00A65298 /* OfflineData.swift in Sources */,
 				A448DE122105C71E00633E65 /* BaseView.swift in Sources */,
 				A477AE592105C41D00696EE3 /* BaseCoordinator.swift in Sources */,
 				A448DE172105C9AB00633E65 /* RouterImp.swift in Sources */,
@@ -494,6 +552,7 @@
 				A448DE1F2105CD2700633E65 /* Storyboards.swift in Sources */,
 				A4AABB9D2105E2E900A65298 /* AboutController.swift in Sources */,
 				A4AABBA52105E79D00A65298 /* AboutModulesFactory.swift in Sources */,
+				A4AABBD42106382000A65298 /* CountryListViewModel.swift in Sources */,
 				A4AABBBD210607A300A65298 /* Dispatcher.swift in Sources */,
 				A4AABBC221060B6D00A65298 /* MapRequests.swift in Sources */,
 				A448DE1A2105CA5F00633E65 /* UIViewController.swift in Sources */,
@@ -502,6 +561,7 @@
 				A4AABBB92106072D00A65298 /* Session.swift in Sources */,
 				A4AABBA82105E82B00A65298 /* ModulesFactoryImp.swift in Sources */,
 				A448DE1C2105CA8500633E65 /* UIView.swift in Sources */,
+				A4AABBD2210632A100A65298 /* CountriesListController.swift in Sources */,
 				A448DE0E2105C54B00633E65 /* Coordinator.swift in Sources */,
 				A4AABBB02105EC8600A65298 /* HomeCoordinator.swift in Sources */,
 				A4AABBC521060E3C00A65298 /* Country.swift in Sources */,
@@ -658,7 +718,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibrahim.kteish.GlovoChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibrahim.kteish.Glovo.Challenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -677,7 +737,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibrahim.kteish.GlovoChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibrahim.kteish.Glovo.Challenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

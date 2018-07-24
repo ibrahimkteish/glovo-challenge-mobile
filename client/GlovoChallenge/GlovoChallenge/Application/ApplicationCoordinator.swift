@@ -8,6 +8,7 @@
 
 import Foundation
 import RxSwift
+import GoogleMaps
 
 final class ApplicationCoordinator: BaseCoordinator {
   // MARK: Properties
@@ -19,6 +20,7 @@ final class ApplicationCoordinator: BaseCoordinator {
   init(coordinatorFactory: CoordinatorFactory, router: Router) {
     self.coordinatorFactory = coordinatorFactory
     self.router = router
+    GMSServices.provideAPIKey("AIzaSyABaf9jHQn6I1j-cBgrPoXAsmSQBotSu6c")
   }
   
   // MARK: Override
