@@ -19,13 +19,14 @@ protocol CountriesListViewOutput: BaseView {
 final class CountriesListContrioller: UIViewController, CountriesListViewOutput {
   let onDidSelectCity: PublishSubject<City> = .init()
   private let disposeBag = DisposeBag()
-  private let viewModel: CountryListViewModelType = CountryListViewModel()
+  private var viewModel: CountryListViewModelType!
   
   @IBOutlet weak var searchBar: UISearchBar!
   @IBOutlet weak var tableView: UITableView!
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.viewModel = CountryListViewModel(with: self.searchBar.rx.text.orEmpty.asDriver())
     self.setupViewAndBinding()
   }
   
@@ -44,26 +45,17 @@ final class CountriesListContrioller: UIViewController, CountriesListViewOutput 
       titleForHeaderInSection: { ds, index in
         return ds.sectionModels[index].name
     })
+    
     self.viewModel
       .output
       .filteredData
-      .bind(to: tableView.rx.items(dataSource: dataSource))
+      .drive(tableView.rx.items(dataSource: dataSource))
       .disposed(by: self.disposeBag)
     
     self.tableView.rx.modelSelected(City.self).bind(to: self.onDidSelectCity).disposed(by: self.disposeBag)
     
-    //SeacrBar
-    self.searchBar.rx
-      .text
-      .orEmpty
-      .throttle(0.3, scheduler: MainScheduler.instance)
-      .debounce(0.3, scheduler: MainScheduler.instance)
-      .distinctUntilChanged()
-      .bind(to: self.viewModel.input.search)
-      .disposed(by: self.disposeBag)
-    
+    //Search Bar
     self.searchBar.placeholder = "Search by country"
-    
   }
 }
 

@@ -12,11 +12,11 @@ import RxCocoa
 
 protocol CountryListViewModelInputType {
   var onViewDidLoad: PublishSubject<Void> { get }
-  var search: PublishSubject<String> { get }
+  var search: Driver<String> { get }
 }
 
 protocol CountryListViewModelOutputType {
-  var filteredData: Observable<[CountriesSection]> { get }
+  var filteredData: Driver<[CountriesSection]> { get }
 }
 
 protocol CountryListViewModelType: CountryListViewModelInputType, CountryListViewModelOutputType {
@@ -33,24 +33,33 @@ final class CountryListViewModel: CountryListViewModelType {
   
   //MARK: Input
   let onViewDidLoad: PublishSubject<Void> = .init()
-  let search: PublishSubject<String> = .init()
+  let search: Driver<String>
   
   //MARK: Output
-  let filteredData: Observable<[CountriesSection]>
+  let filteredData: Driver<[CountriesSection]>
   
-  init() {
+  init(with searchDriver: Driver<String>) {
+    self.search = searchDriver
+    
     let countries = Current.apiService.countriesNetworkOperation()
       .execute(in: NetworkDispatcherFactory.development)
       .observeOn(MainScheduler.instance)
-      .share(replay: 1)
+      .startWith(OfflineData.countries())
+      .asDriver { (error) -> SharedSequence<DriverSharingStrategy, Countries> in
+        return Driver.just(OfflineData.countries())
+    }
     
     let cities = Current.apiService.citiesNetworkOperation()
       .execute(in: NetworkDispatcherFactory.development)
       .observeOn(MainScheduler.instance)
-      .share(replay: 1)
+      .startWith(OfflineData.cities())
+      .asDriver { (error) -> SharedSequence<DriverSharingStrategy, Cities> in
+        
+        return Driver.just(OfflineData.cities())
+    }
     
-    let combined = Observable.combineLatest(countries, cities) { (countries, cities) -> [CountriesSection] in
-    
+    let combined = Driver.combineLatest(countries, cities) { (countries, cities) -> [CountriesSection] in
+
       var finalSections = countries.map { CountriesSection(name: $0.name, code:$0.code, items: []) }
       
       //Sorry: probably we need better than this
@@ -66,9 +75,9 @@ final class CountryListViewModel: CountryListViewModelType {
         })
       })
       return finalSections
-      }.share(replay: 1)
+      }
   
-    self.filteredData = Observable.combineLatest(combined, search, resultSelector: { (countries, filterInput) -> [CountriesSection] in
+    self.filteredData = Driver.combineLatest(combined, search, resultSelector: { (countries, filterInput) -> [CountriesSection] in
       if filterInput.isEmpty { return countries }
       return countries.filter { $0.name.contains(filterInput) }
 
