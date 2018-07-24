@@ -18,8 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1V-8i-GOT">
-                                <rect key="frame" x="164" y="323" width="47" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Glovo Challenge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSc-Py-sPk">
+                                <rect key="frame" x="123" y="28" width="129.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developer: Ibrahim Koteish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOE-Rd-dtw">
+                                <rect key="frame" x="8" y="65" width="206" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: ikteish@yahoo.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8h-fG-ooc">
+                                <rect key="frame" x="8" y="94" width="199" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Technollogy used: Swift 4.1, RxSwift, RxCocoa, RxDatasources, Google Map SDK, Autolayout, MVVM, Coordinators" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awa-a9-lFu">
+                                <rect key="frame" x="8" y="123" width="359" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -27,8 +45,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="w1V-8i-GOT" firstAttribute="centerX" secondItem="wZf-Yw-ZVa" secondAttribute="centerX" id="QfR-We-VUl"/>
-                            <constraint firstItem="w1V-8i-GOT" firstAttribute="centerY" secondItem="wZf-Yw-ZVa" secondAttribute="centerY" id="RgB-HS-Euv"/>
+                            <constraint firstItem="awa-a9-lFu" firstAttribute="leading" secondItem="6SD-Um-vvo" secondAttribute="leading" constant="8" id="4aL-m8-ifc"/>
+                            <constraint firstItem="LSc-Py-sPk" firstAttribute="centerX" secondItem="wZf-Yw-ZVa" secondAttribute="centerX" id="CdP-dJ-OGe"/>
+                            <constraint firstItem="6SD-Um-vvo" firstAttribute="trailing" secondItem="awa-a9-lFu" secondAttribute="trailing" constant="8" id="Pho-Sk-S1g"/>
+                            <constraint firstItem="gOE-Rd-dtw" firstAttribute="leading" secondItem="6SD-Um-vvo" secondAttribute="leading" constant="8" id="Vbr-cJ-K5y"/>
+                            <constraint firstItem="awa-a9-lFu" firstAttribute="top" secondItem="o8h-fG-ooc" secondAttribute="bottom" constant="8" id="aCm-7l-LGh"/>
+                            <constraint firstItem="o8h-fG-ooc" firstAttribute="leading" secondItem="6SD-Um-vvo" secondAttribute="leading" constant="8" id="cHG-hx-tUy"/>
+                            <constraint firstItem="gOE-Rd-dtw" firstAttribute="top" secondItem="LSc-Py-sPk" secondAttribute="bottom" constant="16" id="fsG-Xm-RVC"/>
+                            <constraint firstItem="o8h-fG-ooc" firstAttribute="top" secondItem="gOE-Rd-dtw" secondAttribute="bottom" constant="8" id="nzD-9i-aQ6"/>
+                            <constraint firstItem="LSc-Py-sPk" firstAttribute="top" secondItem="6SD-Um-vvo" secondAttribute="top" constant="8" id="zsV-4d-pTz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6SD-Um-vvo"/>
                     </view>
